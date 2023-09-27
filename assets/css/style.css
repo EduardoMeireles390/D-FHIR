@@ -21,7 +21,6 @@ width: 25%;
 } 
 .wrapper{
     width: 200px;
-
 }
 .link_wrapper {
   display: block;
@@ -35,6 +34,41 @@ width: 25%;
   transition: all .35s;
   border-radius: 25px;
 }
+
+#login-dialog{
+  border-radius: 20px;
+  border: solid #3A8EF6;
+  margin-top: 26vh;
+}
+
+.botao-novo-cadastro{
+  display: block;
+  height: 55px;
+  line-height: 50px;
+  font-weight: bold;
+  background: #0018ee;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 1px;
+  transition: all .35s;
+  border-radius: 25px;
+}
+
+.botao-novo-cadastro button{
+  border: none;
+  background-color: transparent;
+  color: #fff;
+}
+
+.link-cadastro{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
 .botao{
   text-decoration: none;
   line-height: 50px;
