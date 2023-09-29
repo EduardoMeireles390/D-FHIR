@@ -8,13 +8,13 @@
 </head>
 <body>
     <header>
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="./Index.html">
             <img class="logo" src="/assets/images/LOGO.png" alt="">
         </a>
 
         <ul>
             <li>
-                <a href="">Início</a>
+                <a href="./Index.html">Início</a>
             </li>
             <li>
                 <a href="">Sobre</a>
@@ -28,7 +28,7 @@
     <div class="div-cadastro">
         <div class="div-formulario">
             <h1>Formulario de cadastro</h1>
-            <form action="processar_formulario.php" method="POST">
+            <form id="formulario" method="POST">
                 <label for="nome">Nome</label>
                 <input type="text" id="nome" name="nome" required><br><br>
         
@@ -36,7 +36,7 @@
                 <input type="email" id="email" name="email" required><br><br>
         
                 <label for="nome_login">Nome de Usuário</label>
-                <input type="text" id="nome_login" name="nome_login" required><br><br>
+                <input type="text" id="login" name="nome_login" required><br><br>
         
                 <label for="senha">Senha</label>
                 <input type="password" id="senha" name="senha" required><br><br>
@@ -44,11 +44,13 @@
                 <label for="confirmar_senha">Confirmar Senha</label>
                 <input type="password" id="confirmar_senha" name="confirmar_senha" required><br><br>
         
-                <button class="botao-registrar">Criar</button>
+                <button type="submit" class="botao-registrar">Criar</button>
             </form>
         </div>
     </div>
 
+    <script src="./assets/js/formulario.js"></script>
+    <script src="./assets/js/login.js"></script>
 </body>
 </html>
 
