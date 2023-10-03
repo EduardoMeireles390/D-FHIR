@@ -151,33 +151,3 @@ h1,h5{
   background-color: #3A8EF6;
   align-items: center;
 }
-.beneficios_h2{
-  font-weight: bold;
-  margin-bottom: 20px;
-  color:white ;
-  text-align: center;
-  padding: 3%;
-}
-.beneficios_cartao{
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-}
-.card-title{
-  font-weight: bold;
-}
-.card-img-top{
-  width: 150;
-  height: 150p;
-}
-p{
-  font-weight: normal;
-  }
-
-span{
-  background: var(--Gradient-1, linear-gradient(96deg, #3A8EF6 -10.84%, #6F3AFA 196.74%));
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-}
