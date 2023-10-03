@@ -17,7 +17,7 @@ event.preventDefault(); // Impede o envio padrão do formulário
       // Autenticação bem-sucedida
       alert("Login bem-sucedido!");
       // Redirecione o usuário para a página apropriada
-      window.location.href = "./index.html";
+      window.location.href = "./assets/pages/infos.html";
     } else {
       // Trate o erro de autenticação, por exemplo:
       alert("Nome de usuário ou senha incorretos ou você não fez o login. Tente novamente.");
