@@ -192,19 +192,37 @@ span{
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
-
+/* pagina formulario */
 .div-cadastro{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 .div-formulario{
   border: solid #3A8EF6;
   padding: 40px;
   border-radius: 20px;
 }
+/* Fim pagina formulario */
+
+/* pagina info */
+.info{
+  display: flex;
+}
+
+
+.localizacao_texto{
+padding: 50px;
+border-radius: 20px;
+margin-left: 25%;
+margin-right: 25%;
+
+background-color: #55555518;
+
+}
+/* Fim pagina info */
 
 @media (max-width: 768px) {
   
