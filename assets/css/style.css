@@ -11,10 +11,18 @@ body{
   margin-left: 10%;
 }
 .navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   height: 60px;
   padding: 50px;
   font-size: 25px;
   color: #161616;
+}
+.navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
 }
 .logo{
 width: 25%;
@@ -122,6 +130,7 @@ a {
   display: flex;
   align-items: center;
   margin-left: 10%;
+
 }
 .titulo{
 font-family: 'poppins', sans-serif;
@@ -143,7 +152,9 @@ h1,h5{
 }
 .imagem{
   width: 600px;
-
+}
+.imagem_info{
+  width: 500px;
 }
 .container_imagem{
   width: 100%;
@@ -163,6 +174,7 @@ h1,h5{
   gap: 30px;
   justify-content: center;
 }
+
 .card-title{
   font-weight: bold;
 }
@@ -180,4 +192,41 @@ span{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+  
+  .logo{
+    width: 150px;
+  }
+  .navbar{
+    height: 90%;
+  }
+  .beneficios_cartao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+  }
+  .card {
+    grid-column: 1/1;
+  }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0px;
+}
+  .container_imagem{
+    height: 100%;
+    align-items: center;
+  }
+.imagem{
+width: 300px;
+}
+.titulo {
+  width: 100%;
+}
+
 }
