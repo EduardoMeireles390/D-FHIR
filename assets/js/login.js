@@ -15,9 +15,9 @@ event.preventDefault(); // Impede o envio padrão do formulário
   // Verificando se os valores existem
     if ( logincadastro === usuario && senhacadastro === senha) {
       // Autenticação bem-sucedida
-      alert("Login bem-sucedido!");
+      alert("Preencha seu formulario de saúde!");
       // Redirecione o usuário para a página apropriada
-      window.location.href = "./index.html";
+      window.location.href = "../pages/formulario.html";
     } else {
       // Trate o erro de autenticação, por exemplo:
       alert("Nome de usuário ou senha incorretos ou você não fez o login. Tente novamente.");
@@ -25,5 +25,5 @@ event.preventDefault(); // Impede o envio padrão do formulário
 
 });
 function redirect() {
-  window.location.href = "./assets/pages/infos.html";
+  window.location.href = "../pages/formulario.html";
 }

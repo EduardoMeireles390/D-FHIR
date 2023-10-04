@@ -6,6 +6,7 @@ body{
     background-color: #F2F7FF;
     color: #000000;
 }
+/* menu */
 .navbar-brand{
   font-size: 30px;
   margin-left: 10%;
@@ -123,9 +124,7 @@ a {
   color: #757575;
   border-radius: 25px
 }
-.conetudo{
-  margin: 30px;
-}
+/* fim menu */
 .container{
   display: flex;
   align-items: center;
@@ -194,6 +193,18 @@ span{
   font-weight: bold;
 }
 
+.div-cadastro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+.div-formulario{
+  border: solid #3A8EF6;
+  padding: 40px;
+  border-radius: 20px;
+}
 
 @media (max-width: 768px) {
   

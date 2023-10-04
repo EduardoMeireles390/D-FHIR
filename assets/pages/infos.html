@@ -14,7 +14,7 @@
         <!-- inicio do cabeçalho -->
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="../../Index.html">
                         <img class="logo" src="../images/LOGO.png" alt="logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,12 +25,14 @@
         <!-- fim do cabeçalho -->
     </section>
     <!-- conteudo menu -->
-    
+    <section>
+        
+    </section>
         <section class="conetudo_menu">
             <div class="container">
                 <div class="titulo">
                     <h1>Obrigado pelas informações</h1>
-                    <h5>O objetivo do D-FHIR é melhorar a qualidade e a eficiência dos cuidados com a diabetes, permitindo que os profissionais de saúde compartilhem informações de forma segura e consistente.</h5>
+                    <h5>Agende sua consulta com um profissional de saúde qualificado para obter mais informações sobre como o D-FHIR pode ajudá-lo a gerenciar seu diabetes.</h5>
                 </div>
                 <div class="imagem">
                     <img class="imagem" src="../images/diabetes3.png" alt="imagem-ilustrativa">
@@ -39,66 +41,61 @@
         </section>
     <!-- fim conteudo menu  -->
     <!-- conteudo meio -->
-        <section class="container_meio">
-            <div class="container_imagem">
-              <h2 class="beneficios_h2">Como identificar os diferentes tipos de diabetes</h2>
-              <!-- card -->
-              <div class="beneficios_cartao">
-                <div class="card text-bg-light mb-3" style="max-width: 15rem;">
-                  <img class="card-img-top" src="../images/diabetes/tipo1.png" alt="Imagem do benefício">
-                  <div class="card-body">
-                    <h5 class="card-title">Diabetes tipo 1</h5>
-                    <p class="card-text"> É uma doença autoimune, o que significa que o corpo ataca e destrói as células do pâncreas que produzem insulina. A insulina é um hormônio que ajuda o corpo a usar a glicose como energia.</p>
+    <section>
+        <div class="container_agendamanto">
+            <div   class="div-cadastro">
+                <div class="div-formulario">
+            <h1>Agende sua Consulta:</h1>
+            <form action="/agendar" method="post">
+                  <div class="row">
+                  <div class="col-md-6">
+                    <label for="nome">Nome</label>
+                    <input type="text" class="form-control" id="nome" name="nome" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
                   </div>
                 </div>
-                <div class="card text-bg-light mb-3" style="max-width: 15rem;">
-                  <img class="card-img-top" src="../images/diabetes/tipo2.png" alt="Imagem do benefício">
-                  <div class="card-body">
-                    <h5 class="card-title">Diabetes tipo 2</h5>
-                    <p class="card-text"> É o tipo mais comum de diabetes. É causado pela combinação de resistência à insulina e deficiência de insulina. A resistência à insulina ocorre quando as células do corpo não respondem adequadamente à insulina.</p>
-                  </div>
-                </div>
-                <div class="card text-bg-light mb-3" style="max-width: 15rem;">
-                  <img class="card-img-top" src="../images/diabetes/tipo4.png" alt="Imagem do benefício">
-                  <div class="card-body">
-                    <h5 class="card-title">Diabetes gestacional </h5>
-                    <p class="card-text">É um tipo de diabetes que ocorre durante a gravidez. É causada por uma combinação de fatores, incluindo resistência à insulina e aumento da produção de hormônios pelo corpo da mulher durante a gravidez.</p>
-                  </div>
-                </div>
-                <div class="card text-bg-light mb-3" style="max-width: 15rem;">
-                    <img class="card-img-top" src="../images/diabetes/tipo3.png" alt="Imagem do benefício">
-                    <div class="card-body">
-                      <h5 class="card-title">Outros tipos de diabetes</h5>
-                      <p class="card-text">Existem outros tipos de diabetes menos comuns, como diabetes tipo 3c, diabetes monogênico e diabetes secundária.</p>
+            
+                <div class="row">
+                    <div class="col-md-6">
+                      <label for="unidade_medica">Unidade médica</label>
+                      <select class="form-control" id="unidade_medica" name="unidade_medica">
+                        <option value="">Selecione uma unidade médica</option>
+                        <option value="Hospital Central">Hospital Central</option>
+                        <option value="Posto de Saúde da Vila">Posto de Saúde da Vila</option>
+                        <option value="Clínica Médica">Clínica Médica</option>
+                      </select>
                     </div>
+                  <div class="col-md-6">
+                    <label for="medico">Médico</label>
+                    <select class="form-control" id="medico" name="medico">
+                      <option value="">Selecione um médico</option>
+                      <option value="Dr. João">Dr. João</option>
+                      <option value="Dra. Maria">Dra. Maria</option>
+                      <option value="Dr. José">Dr. José</option>
+                    </select>
                   </div>
+                </div>
+            
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="data">Data</label>
+                    <input type="date" class="form-control" id="data" name="data" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="horario">Horário</label>
+                    <input type="time" class="form-control" id="horario" name="horario" required>
+                  </div>
+                </div><br>
+            
+                <button type="submit" class="btn btn-primary">Agendar</button>
               </div>
-            <!-- fim card -->
-
-            </div>
-          </section>
-    <!-- fim conteudo meio -->
-    <!-- informações -->
-    <section class="container_infos">
-        <div class="container">
-            <div class="titulo">
-                <h1>Prevenção da diabetes <br> O que você pode fazer:</h1>
-                <p>
-                    A diabetes é uma doença crônica que afeta o metabolismo da glicose. Quando uma pessoa tem diabetes, o corpo não consegue produzir insulina ou não usa a insulina de forma eficaz. A insulina é um hormônio que ajuda o corpo a usar a glicose como energia.
-                </p>
-                <p><b> Mantenha um peso saudável</b> O excesso de peso ou a obesidade são fatores de risco para a diabetes tipo 2.</p>
-                <P><b> Faça exercícios regularmente</b> O exercício ajuda a manter o peso saudável e melhora a sensibilidade à insulina.</P>
-                <P><b> Alimente-se de forma saudável</b> Uma dieta saudável inclui muitas frutas, vegetais, grãos integrais e proteínas magras.</P>
-                <P><b> Controle o colesterol e a pressão arterial</b> O colesterol alto e a pressão alta também são fatores de risco para a diabetes tipo 2.</P>
-            </div>
-            <div class="imagem">
-                <img class="imagem_info" src="../images/prevenir.png" alt="">
-            </div>
+            </form>
+          </div>
         </div>
-    </section>
-    <!-- fim informações -->
-    <script src="./assets/js/scripts.js"></script>
-    <script src="./assets/js/login.js"></script>
-    <script src="./assets/js/formulario.js"></script>
+   
+    
 </body>
 </html>

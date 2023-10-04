@@ -17,6 +17,17 @@
                     <a class="navbar-brand" href="#">
                         <img class="logo" src="./assets/images/LOGO.png" alt="">
                     </a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Início</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./assets/pages/dicas.html">Dicas</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                     <!-- botão -->
                     <div class="wrapper">
                         <div class="link_wrapper">
@@ -27,11 +38,14 @@
                             <dialog id="login-dialog">
                                 <form id="login-form" action="/login" method="post" class="mb-3">
                                     <h1>Usuário:</h1>
-                                    Usuário: <input type="user" id="cadastro-login" placeholder="Digite seu usuário"><br>
-                                    Senha:   <input type="password" id="senha-login" placeholder="Digite sua senha">
-                                <div class="botao-novo-cadastro">
+                                    <label for="cadastro-login">Usuário:</label>
+                                    <input type="user"class="form-control rounded-pill" id="cadastro-login" placeholder="Digite seu Usuário"  required>
+                                    <label for="senha-login">Senha:</label>
+                                    <input type="password" class="form-control rounded-pill"  id="senha-login" placeholder="Digite sua senha" required><br>
+                                    <div class="botao-novo-cadastro">
                                     <img class="icon_iten" src="./assets/images/passion.png" alt="icon">
-                                    <button>Login</button> <a href="./assets/pages/infos.html"></a>
+                                    <!-- <button>Login</button> -->
+                                     <a href="./assets/pages/formulario.html">Login</a>
                                 </div>
                             </form>
 
